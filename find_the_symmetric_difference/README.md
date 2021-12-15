@@ -16,6 +16,8 @@ The result of the first pass of the loop will add the first array to the loop in
 
 Last, do a sort on `result` (requiring the function we pass to `result.sort()` as an argument to ensure a numeric sort) because the tests require the result to be sorted to pass.
 
+## Solution
+
 ```javascript
 function sym(args) {
   let result = [];
