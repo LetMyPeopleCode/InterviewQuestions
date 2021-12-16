@@ -18,7 +18,9 @@ When done, return the `result`.
 
 ## Notes
 
-The initial thought hurdle I had to overcome was where to make `last` directly equal `fib`. There was nowhere in this that wouldn't cause a binary progression (1, 2, 4, 8, 16...) instead of a fibonacci one (1, 1, 2, 3, 5, 8...). Simply put, `last` had to equal fib, but only the value of `fib` *before* `last` had been added to it. Adding `hold` solved that.
+The initial thought hurdle I had to overcome was where to make `last` directly equal `fib`. Two iterations of the code suffered from that logic error and failed the tests.
+
+I realized there was nowhere in this that wouldn't cause a binary progression (1, 2, 4, 8, 16...) instead of a fibonacci one (1, 1, 2, 3, 5, 8...). Simply put, `last` had to equal fib, but only the value of `fib` *before* `last` had been added to it. Adding `hold` solved that. 
 
 ```text
 iteration 1: 
@@ -36,7 +38,6 @@ iteration 3:
 iteration 4: 
   start: hold = 3, fib = 3, last = 2 
   end: fib = 5, last = 3 
-
 ...
 ```
 
