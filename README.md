@@ -3,7 +3,9 @@ Running through various programming interview questions for practice, saving to 
 
 Each question gets its own directory with a readme and a solution. This document will index them.
 
-I certify on my honor that I have coded each of these myself and did not look up the answers online (though I may have used MDN or other JavaScript documentation sites and looked up sub-functions, like how to numerically sort an array with `Array.prototype.sort()`).
+## Why explain them?
+
+First, it might help other people. Second, it helps me remember them a bit better. Third, if someone is trying to evaluate me as a programmer, it not only gives them insight into my thought process, but possibly more confidence that I wrote and understand the code (and didn't copy it).
 
 ## Algorithms
 ### [Find the Symmetric Difference](./find_the_symmetric_difference)
