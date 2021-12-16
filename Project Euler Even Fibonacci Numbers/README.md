@@ -36,11 +36,12 @@ iteration 3:
 iteration 4: 
   start: hold = 3, fib = 3, last = 2 
   end: fib = 5, last = 3 
-  
+
 ...
 ```
 
 ## Solution
+```javascript
 function fiboEvenSum(n) {
   let result = 0, fib = 1, last = 0;
   while (fib + last <= n) {
@@ -51,3 +52,4 @@ function fiboEvenSum(n) {
   }
     return result;
 }
+```
