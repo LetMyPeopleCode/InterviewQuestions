@@ -9,6 +9,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 
 ## freeCodeCamp Algorithms
 ### [Find the Symmetric Difference](./Algorithms%20-%20Find%20the%20Symmetric%20Difference)
+### [Inventory Update](./Algorithms%20-%20Inventory%20Update)
 
 ## freeCodeCamp Project Euler
 ### [Multiples of 3 and 5](./Project%20Euler%20-%20Multiples%20of%203%20and%205)
