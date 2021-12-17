@@ -5,7 +5,7 @@ This is a folder for some test scripts I wrote along the way to confirm somethin
 ## Scripts
 
 ### [How do JavaScript arrays get passed by default?](array-pass-reference.js)
-Are arrays passed into functions by value or reference? If by reference, then operations on the array in the function will mutate it. 
+Are arrays passed into functions by value or reference? If by reference, then operations on the array in the function will mutate it outside the function scope. 
 
 I wanted to be sure my Inventory Update solution wouldn't create side effects. I recalled it was by reference, but wasn't 100% sure. 
 
