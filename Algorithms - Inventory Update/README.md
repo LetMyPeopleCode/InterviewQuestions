@@ -4,6 +4,7 @@ We have two 2-dimensional arrays in the form of `[[count, "product1"], [count, "
 The task is to compare them. Where a product exists in both arrays, add the sum of the two counts and the product name in the final array. If the item is unique to either array, add it to the final array. Return the final array, alphabetically sorted by product name.
 
 Example: `updateInventory([[2, "Socks"], [4, "Shoes"]], [[4, "Socks], [6, "Tents"]])`
+
 Result: `[[4, "Shoes"], [6, "Socks], [6, "Tents"]]`
 
 ## Solution explained
