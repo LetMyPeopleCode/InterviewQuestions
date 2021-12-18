@@ -12,6 +12,9 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 2: [Inventory Update](./Algorithms%20-%20Inventory%20Update)
 ### 3: [No Repeats Please](./Algorithms%20-%20No%20Repeats%20Please)
 
+## freeCodeCamp Rosetta Code
+### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
+
 ## freeCodeCamp Project Euler
 ### 1: [Multiples of 3 and 5](./Project%20Euler%20-%20Multiples%20of%203%20and%205)
 ### 2: [Even Fibonacci Numbers](Project%20Euler%20-%20Even%20Fibonacci%20Numbers)
