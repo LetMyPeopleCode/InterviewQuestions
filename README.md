@@ -15,4 +15,3 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ## freeCodeCamp Project Euler
 ### 1: [Multiples of 3 and 5](./Project%20Euler%20-%20Multiples%20of%203%20and%205)
 ### 2: [Even Fibonacci Numbers](Project%20Euler%20-%20Even%20Fibonacci%20Numbers)
-git pull
