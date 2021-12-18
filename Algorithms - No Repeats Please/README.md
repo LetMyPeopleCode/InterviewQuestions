@@ -1,14 +1,14 @@
 # freeCodeCamp: No Repeats Please
 
-You get a string like `"aab"` and have to find all the possible combinations, then remove all the combinations where two characters repeat. The trick is the statement "assume that all characters in the provided string are unique." That means you have to treat every character as a unique token and return a set with every possible permutation of those tokens, even if some permutations repeat.
+You get a string like `"aab"` and have to find all the possible combinations, then remove all the combinations where two characters repeat. The trick is the statement "assume that all characters in the provided string are unique." That means you have to treat every character as a unique token and base your answer on a set with every possible permutation of those tokens, even if some permutations repeat.
 
-Then from that list provide the number of strings without consecutively repeated characters, even if the strings themselves repeat. So for `aab`, there are 6 permutations: `aab, aab, aba, aba, baa, baa`, the only ones without consecutively repeating characters are `aba` and `aba`, so the answer is 2.
+Then from that set provide the number of strings without consecutively repeated characters, even if the strings themselves repeat. So for `aab`, there are 6 permutations: `aab, aab, aba, aba, baa, baa`, the only ones without consecutively repeating characters are `aba` and `aba`, so the answer is 2.
 
 ## Solution explained
 
 I broke it into two functions for manageability, one to generate a set of all combinations, then one to compare them.
 
-The one that generates all the combos is `allcombos()` and uses recursion. I'll admit that I had to look up someone else's answer on how to generate the set, but by describing it, I'm not only helping someone else understand what's going on, but helping myself. 
+The one that generates all the combos is `allcombos()` and uses recursion. I'll admit that I had to look up someone else's answer on how to generate the set, but by describing it, I'm hoping I'm not only helping someone else understand what's going on, but helping myself. 
 
 So let's walk through the progress of `allcombos()` with the simple string of `aab`. I'll represent the letters as A(1), A(2), and B.
 
