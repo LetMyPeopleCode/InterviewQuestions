@@ -46,9 +46,9 @@ In a 4-digit string, there are 24 possible combos (4 * 3 * 2 * 1), so this will 
 
 Once called, it takes the 4 digit string, and starts looping through the sets of operators ('+++', '++-'...). It creates a new string by iteratively adding the first number + the first operator, then the second, etc.
 
-That string is evaluated as an expression. If it doesn't return 24, the 6 possible parentheses positions are looped through, applied by slicing up the expression and constructing a new expression with parentheses around the slices. Each of those is tested after it's created.
+That string is evaluated as an expression. If it doesn't return 24 and the `ops` string isn't all plus operators (because parentheses won't change that reesult), the 6 possible parentheses positions are looped through, applied by slicing up the expression and constructing a new expression with parentheses around the slices. Each of those is tested after it's created.
 
-If any expression (with or without parentheses) evaluates to 24, it's returned to the main function. If none work for any of the 384 possible expressions (64 operator sets * 6 parentheses sets), it returns "none".
+If any expression (with or without parentheses) evaluates to 24, it's returned to the main function. If none work for any of the 379 possible expressions (63 operator sets * 6 parentheses sets + all-plusses), it returns "none".
 
 If an expression is returned, the main function returns it. If "none" is returned, the main function loop iterates and another of the 24 variations is sent to `makeExpr()`.
 
@@ -88,10 +88,11 @@ function solve24 (numStr) {
   // nope, lets continue and build a set of all the possible operations
   let opsSet = [];
   opsCombos(numStr.length - 1, ["+","-","*","/"], opsSet);
-  // too tired to make a non-brittle parens set - only works for 4 char num strings
+  // too tired to make a parens set enumerator function
   let parens = [[0,4],[2,6],[4,8],[0,6],[2,8],''];
   //join nums and get full set of num combos
   nums = allCombos(nums.join(''))
+  // test the sets
   for(let i in nums){
     let res = makeExpr(nums[i],opsSet,parens);
     if(res !== "none") return res;
@@ -106,7 +107,8 @@ function makeExpr(str,ops,parens = []){
       expr += str[x] + ((ops[i][x] !== undefined) ? ops[i][x] : "");
     }
     if(eval(expr) === 24) return expr;
-    if(/\*/.test(expr)||/\//.test(expr)){
+    //
+    if(/\*/.test(expr)||/\//.test(expr)||/\-/.test(expr)){
       for(let z = 0; z < parens.length; z++){
         let newexp;
         if(parens[z] === ''){
