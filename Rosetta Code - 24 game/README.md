@@ -10,7 +10,7 @@ In their list of test values and what they should return, it says:
 
 > `solve24("4878")` should return `(7-8/8)*4` or `4*(7-8/8)`
 
-There are more possible results than those two and my solution returns one that's different. I was afraid it would fail the tests, but the test accepts any expression that evaluates to 24, not just the two listed. I noted that test condition could be worded better, because it caused me some anxiety before I just went ahead and ran the tests anyway.
+There are more possible results than those two and my solution returns one that's different. I was afraid it would fail the tests, but the test accepts any expression that evaluates to 24, not just the two listed. I noted on the forums that test description could be worded better, because it caused me some anxiety before I just went ahead and ran the tests anyway.
 
 ## Solution explained
 
