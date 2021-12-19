@@ -1,4 +1,4 @@
-# Rosetta Code: 100 doors
+# freeCodeCamp: Rosetta Code - 100 doors
 In this exercise, we receive a number of doors. It's 100 in the title, but the function gets passed a number of doors, so it should be able to handle an arbitrary # of doors.
 
 We start with all `n` doors closed. On the first pass, you toggle every door to the opposite of its state (closed becomes open, open becomes closed). We iterate the toggle `n` times. Let's call the iteration count `c`. Applying the toggle to every `c`th door on each iteration, until on the final iteration, it's only applied to door `n`.  
@@ -13,11 +13,11 @@ Then start a loop from 1 to `numDoors`. Start counting at 1 because it's used as
 
 The interior loop starts at `i`, so when you're going with every second item, the second loop starts with the second item (i - 1), and so on. It's one of those lovely parts of the iteration starting from 1 and the index values starting from 0. Somewhere you have to do some mathematical gymnastics to make them work together.
 
-While I was writing this, I had to take a "bio-break," and while I did, I wondered if using a boolean would be more memory efficient than using 0 and 1 as representations of `true/false`. A little research later and it seemed they'll both use the same amount of memory depending on the platform, possibly a little less for the boolean. But it occurred to me that the booleans might make it more readable too, so I refactored with booleans.
+While I was writing the code, I used 0 and 1 to represent closed and open, respectively. I had to take a "bio-break" while writing this description, and during that, I wondered if using a boolean would be more memory efficient than using '0' and '1' as representations of closed and open. A little research later and it seemed they'll both use the same amount of memory depending on the platform, possibly a little less for the boolean. But it occurred to me that the booleans might make it more readable too, so I refactored with booleans.
 
-In the interior loop, examine door `j-1` (first loop: 0, 1, 2, 3..., second loop: 1, 3, 5, 7...). Remember, arrays are zero-indexed. Then using a ternary operator, "flip the bit." I use that term because a boolean is essentially a representation of the value of a single byte: on or off, 1 or 0, true or false. Since I started programming at 11, I literally "grew up" with that concept and lingo.
+In the interior loop, examine door `j-1` (first loop: 0, 1, 2, 3..., second loop: 1, 3, 5, 7...). Remember, arrays are zero-indexed. Then using a ternary operator, "flip the bit." I use that term because a boolean is essentially a representation of the value of a single bit: on or off, 1 or 0, true or false. Since I started programming at 11, I literally "grew up" with that concept and lingo.
 
-When it's all done, we run a loop through the array to identify the index values of all the open doors, add 1 to each to get the `n`th value, and push the value to the array that gets returned.
+When it's all done, we run a loop through the array to identify the index values of all the open doors. The trick is that the index will be provided to the loop as a string. Add 1 to the integer value of each to get the `n`th value, and push the value to the array that gets returned.
 
 ## Solution
 

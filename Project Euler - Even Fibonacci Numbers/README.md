@@ -1,4 +1,4 @@
-# Project Euler: Even Fibonacci Numbers
+# freeCodeCamp: Project Euler - Even Fibonacci Numbers
 
 Create a set of fibonacci numbers that are less than or equal to `n` and return the sum of only the even numbers. Fibonacci adds the current number to the prior number in the sequence. So a sequence would be `1, 1, 2, 3, 5, 8, 13...`. In that sequence, only 2 and 8 are even, so the answer would be 10. 
 

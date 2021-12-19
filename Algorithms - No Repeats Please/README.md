@@ -1,4 +1,4 @@
-# freeCodeCamp: No Repeats Please
+# freeCodeCamp: Algorithms - No Repeats Please
 
 You get a string like `"aab"` and have to find all the possible combinations, then remove all the combinations where two characters repeat. The trick is the statement "assume that all characters in the provided string are unique." That means you have to treat every character as a unique token and base your answer on a set with every possible permutation of those tokens, even if some permutations repeat.
 

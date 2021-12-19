@@ -1,4 +1,4 @@
-# freeCodeCamp: Find the Symmetric Difference
+# freeCodeCamp: Algorithms - Find the Symmetric Difference
 
 The concept is to find the numbers in two arrays that do not repeat in both. So `[1 , 2]` and `[2, 3]` would produce [1,3]. If you're comparing more than 2 arrays, you compare the next array (and beyond) to the result of the last comparison. So `[1 , 2]`, `[2, 3]`, and `[2, 4]` would produce `[1, 2, 3, 4]` because 2 is filtered out of the first comparison and it isn't in the result being compared in the next, so it comes back.
 

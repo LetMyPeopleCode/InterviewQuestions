@@ -1,4 +1,4 @@
-# Project Euler: Multiples of 3 and 5
+# freeCodeCamp: Project Euler - Multiples of 3 and 5
 
 By the name, I immediately thought this was fizz-buzz, but it's a bit different. In a set of all natural numbers below the argument, provide the sum of all the numbers that are multiples of 3 and 5.
 
