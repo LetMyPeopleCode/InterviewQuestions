@@ -4,7 +4,7 @@ The game is to take a string of 4 digits and determine how to make them total up
 
 The code should return a solution or "no solution exists."
 
-###Note:
+### Note:
 
 In their list of test values and what they should return, it says:
 
