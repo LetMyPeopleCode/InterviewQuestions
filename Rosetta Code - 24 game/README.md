@@ -1,5 +1,17 @@
 # freeCodeCamp: Rosetta Code - 24 game
 
+The game is to take a string of 4 digits and determine how to make them total up to 24 using plus, minus, times, divide, and parentheses. People play this game sort of like Sudoku as a mental exercise.
+
+The code should return a solution or "no solution exists."
+
+###Note:
+
+In their list of test values and what they should return, it says:
+
+> `solve24("4878")` should return `(7-8/8)*4` or `4*(7-8/8)`
+
+There are more possible results than those two and my solution returns one that's different. I was afraid it would fail the tests, but the test accepts any expression that evaluates to 24, not just the two listed. I noted that test condition could be worded better, because it caused me some anxiety before I just went ahead and ran the tests anyway.
+
 ## Solution explained
 
 Wow, did this take a while. First I had to figure out the logic of how it would work in broad strokes, then the logic of how to implement the broad strokes.
