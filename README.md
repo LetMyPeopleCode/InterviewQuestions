@@ -12,6 +12,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 2: [Inventory Update](./Algorithms%20-%20Inventory%20Update)
 ### 3: [No Repeats Please](./Algorithms%20-%20No%20Repeats%20Please)
 ### 4: [Pairwise](./Algorithms%20-%20Pairwise)
+### 5: [Implement Bubble Sort](./Algorithms%20-%20Implement%20Bubble%20Sort)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
