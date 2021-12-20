@@ -11,6 +11,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 1: [Find the Symmetric Difference](./Algorithms%20-%20Find%20the%20Symmetric%20Difference)
 ### 2: [Inventory Update](./Algorithms%20-%20Inventory%20Update)
 ### 3: [No Repeats Please](./Algorithms%20-%20No%20Repeats%20Please)
+### 4: [Pairwise](./Algorithms%20-%20Pairwise)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
