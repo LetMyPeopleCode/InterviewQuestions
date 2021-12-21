@@ -24,9 +24,7 @@ function selectionSort(array) {
   array.forEach((value, index)=>{
     let swapper = index;
     for(let i = index+1; i < array.length; i++){
-      if (array[i] < array[swapper]) {
-        swapper = i;
-      }
+      if (array[i] < array[swapper]) swapper = i;
     }
     if(swapper !== index){
       array[index] = array[swapper];
