@@ -12,6 +12,10 @@ If it's not the *current* smallest or largest value, triggering the conditions a
 
 When the outer loop is done, return the sorted array.
 
+## Solution Note
+
+I'm not sure if my solution explicitly follows the rules because of the "swap it backward" wording. In bubble sorting and selection sorting, I literally swapped two values in an array (multiple times). In this one, I'm directly inserting it at the evaluated best place with `unshift`, `splice`, or `push`. But since this is called an "insertion" sort, it's my opinion that was the most efficient way to follow the spirit of the instructions, if not the letter.
+
 ## Solution
 ```javascript
 function insertionSort(arr) {
