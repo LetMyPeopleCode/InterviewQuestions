@@ -17,6 +17,7 @@ The `merge()` function takes 2 *sorted* arrays and combines them into a sorted a
 While both of them have at least one element, each array's `[0]` value is compared. The lower one is removed and added to the new array. Once one has hit 0 elements, anything remaining in the other gets tacked on to the end. Because each incoming array has already been sorted, those remaining values are larger than anything else in the merged array and are in order.
 
 ## Solution
+```javascript
 function mergeSort(arr) {
   if(arr.length <=1) return arr;
   let half = Math.floor(arr.length/2);
@@ -39,3 +40,4 @@ function merge(arr1, arr2){
   if(arr1.length > 0) merged = merged.concat(arr1);
   return merged
 }
+```
