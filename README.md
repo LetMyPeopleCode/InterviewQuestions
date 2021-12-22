@@ -16,6 +16,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 6: [Implement Selection Sort](./Algorithms%20-%20Implement%20Selection%20Sort)
 ### 7: [Implement Insertion Sort](./Algorithms%20-%20Implement%20Insertion%20Sort)
 ### 8: [Implement Quick Sort](./Algorithms%20-%20Implement%20Quick%20Sort)
+### 9: [Implement Merge Sort](./Algorithms%20-%20Implement%20Merge%20Sort)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
