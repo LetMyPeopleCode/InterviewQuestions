@@ -19,6 +19,9 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 9: [Implement Merge Sort](./Algorithms%20-%20Implement%20Merge%20Sort)
 ### 10: [Implement Binary Search](./Algorithms%20-%20Implement%20Binary%20Search)
 
+## freeCodeCamp Data Structures
+### 3: [Create a Stack Class](./Data%20Structures%20-%20Create%20a%20Stack%20Class) 
+
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
 ### 2: [24 game](./Rosetta%20Code%20-%2024%20game)
