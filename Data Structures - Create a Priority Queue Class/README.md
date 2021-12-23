@@ -15,14 +15,11 @@ That gripe aside, it also screwed me up because I didn't notice that shift, wrot
 
 First I changed their `printCollection` function to a fat arrow function for more consistency.
 
-With `enqueue`, I set a tracking variable, `pushed` to false. Then I walk the existing collection. If we reach an element with a larger priority number, the incoming element is spliced in right before it. If there are multiple priority 1 elements and the incoming element is priority 1, it will get inserted between the last priority 1 element and the first priority 2 element. For purposes of the queue, each priority level should still be FIFO. If it's inserted, the tracking variable becomes true and the loop is broken.
+With `enqueue`, I set a variable for the length of the array, because it's used a LOT.
 
-If the tracking variable is still false after that, it means one of two things:
+First check if the queue is empty or the priority number of the incoming element is greater than or equal to the priority number of the final element in the queue. If either is true, we can save some time, pop it on the end, and end the function.
 
-1. There is nothing in the queue with a larger priority number.
-2. There's just nothing in the queue.
-
-In either case, it can be pushed onto the end of the queue.
+If the function's still going, walk the array until we find an element with a priority number that's bigger than the one in the incoming element, then insert the incoming element right before it.
 
 With `dequeue`, we're only supposed to return its value, not its priority. Same with `front`. The rest are pretty easy to figure out.
 
@@ -33,15 +30,18 @@ function PriorityQueue () {
   this.collection = [];
   this.printCollection = () => console.log(this.collection);
   this.enqueue = (el) => {
-    let pushed = false;
-    for(let i = 0; i < this.collection.length; i++){
+    let len = this.collection.length;
+    if(len == 0 || this.collection[len-1][1] <= el[1]){
+      console.log("first or biggest", this.collection, el)
+      this.collection.push(el);
+      return undefined;
+    }
+    for(let i = 0; i < len; i++){
       if(this.collection[i][1] > el[1]){
         this.collection.splice(i,0,el);
-        pushed = true;
         break;
       }
     }
-    if(!pushed) this.collection.push(el)
   }
   this.dequeue = () => this.collection.shift()[0];
   this.front = () => this.collection[0][0];
