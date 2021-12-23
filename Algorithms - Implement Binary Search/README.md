@@ -2,18 +2,17 @@
 
 In this implementation of a binary search, you're presented a sorted array of values and a target value to find within it.
 
-Find the approximate halfway point (by length) of the array, using `Math.floor(array.length/2)`. Then extract a middle number. If that number is higher than the target value, recursively pass an array with the values to the left of that number back to the binary search function. If it's lower, pass an array with the values that are greater. If it's equal, return an array with just that number.
+Find the approximate halfway point (by length) of the array, using `Math.floor(array.length/2)`. Then extract a middle number. If that number is higher than the target value, recursively pass an array with the values to the left of that number back to the binary search function. If it's lower, pass an array with the values to the right. If it's equal, return an array with just that number.
 
-When you've found the number and it passes back up the recursion chain, concatenate all the middle values onto the left side and return an array that traces the path through the middle numbers to the found numbers. If the number isn't found, return "Value Not Found."
-
+When you've found the number and it passes back up the recursion chain, concatenate the middle values onto the left side as it passes back up the chain of recursion. Return an array that traces the path through the middle numbers to the found number. If the number isn't found, return "Value Not Found."
 
 ## Solution Explained
 
-First, obviously the prior sorts said you can't use `Array.prototype.sort()`, but this search didn't prohibit `Array.prototype.indexOf()`. But they get you with having to "show your work" by passing the path of middle numbers it took to get to the target value.
+First, the prior sorts said you can't use `Array.prototype.sort()`, but this search didn't explicitly prohibit `Array.prototype.indexOf()`. Instead they get you with having to "show your work" by passing the path of middle numbers it took to get to the target value.
 
-Start by getting the `half`way point and the `middle` value. Note how the `middle` value is `half` minus `(1 - searchList.length%2`). In cases where the length is even, `1 - searchList.length%2` will be 1. For Odd, it'll be 0. That's because for even-length lists, halfway exists between two letters and you should grab the one on the left. For odd-length lists, you get the index of the one in the middle and don't have to change the `half` value.
+Start by getting the `half`way point and the `middle` value. Note how the `middle` index is `half` minus `(1 - searchList.length%2`). In cases where the length is even, `1 - searchList.length%2` will be 1. Where length is odd, it'll be 0. That's because for even-length lists, halfway exists between two letters and you should grab the one on the left. For odd-length lists, you get the index of the one in the middle and don't have to change the `half` value.
 
-Follow by checking if `middle` equals the `value` of if the incoming array is 1 item long and matches the value. If so, return an array containing the value. If the array is 1 or 0 long and the one number in it doesn't match the target, return the error message to start percolating up the recursion chain.
+Next, check if `middle` equals the `value` agrument OR if the incoming array is 1 item long and matches the `value`. If so, return an array containing the value. If the array has a length of 1 and the one item doesn't match the target, OR the array has a length of 0, return the error message to start percolating up the recursion chain.
 
 Next assign the appropriate array chunk to `nextpass` (if the value's higher than the middle, assign the group of bigger numbers, else assign the smaller group); 
 
