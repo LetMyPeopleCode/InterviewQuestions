@@ -32,7 +32,6 @@ function PriorityQueue () {
   this.enqueue = (el) => {
     let len = this.collection.length;
     if(len == 0 || this.collection[len-1][1] <= el[1]){
-      console.log("first or biggest", this.collection, el)
       this.collection.push(el);
       return undefined;
     }
