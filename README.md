@@ -24,6 +24,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 4: [Create a Queue Class](./Data%20Structures%20-%20Create%20a%20Queue%20Class)
 ### 5: [Create a Priority Queue Class](./Data%20Structures%20-%20Create%20a%20Priority%20Queue%20Class)
 ### 6: [Create a Circular Queue](./Data%20Structures%20-%20Create%20a%20Circular%20Queue)
+### 7: [Create a Set Class](./Data%20Structures%20-%20Create%20a%20Set%20Class)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
