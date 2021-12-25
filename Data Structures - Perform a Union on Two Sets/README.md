@@ -45,12 +45,15 @@ class Set {
     return this.length;
   }
   // Only change code below this line
-  union(newset){
-    let merge = newset.values();
+  union(nextset){
+    let newset = new Set();
+    Object.assign(newset.dictionary, this.dictionary)
+    let merge = nextset.values();
     for(let i in merge){
-      this.add(merge[i]);
+      newset.add(merge[i]);
     }
-    return this;
+    return newset;
   }
   // Only change code above this line
 }
+```

@@ -19,7 +19,10 @@ But the property had to have a value. I just put in `true`. When I tested the `v
 
 The `remove` was a simple variation on `add`, but instead of adding the property, it got deleted.
 
-And the size used `Object.entries()` to get an array of *added* properties and returned its length.
+Before I noticed the `this.length` variable in the constructor, I used this method to return the length.
+> And the `size` used `Object.entries()` to get an array of *added* properties and returned its length.
+
+But then I added code in the `add` and `remove` to increment and decrement `this.length` and updated the `size` method. I didn't do this to make my solution like their's. I thought about it and decided that returning a value from a property was less computationally intense than getting an array of all added values and then returning its length, and while it might add a smidge more to the computational weight of the `add` and `remove` methods, it was likely more efficient overall.
 
 ## Solution
 
@@ -46,19 +49,21 @@ class Set {
   add(val){
     if(this.dictionary.hasOwnProperty(val)) return false;
     this.dictionary[val.toString()] = val;
+    this.length++;
     return true;
   }
 
   remove(val){
     if(this.dictionary.hasOwnProperty(val)){
-      delete this.dictionary[val.toString()]
+      delete this.dictionary[val.toString()];
+      this.length--;
       return true;
     }
     return false;
   }
 
   size(){
-    return Object.entries(this.dictionary).length;
+    return this.length;
   }
 }
 ```
