@@ -30,5 +30,4 @@ So, while this JS `Set` is not like *the* JS `Set`, the sample `union` function 
     }
     return newset;
   }
-}
 ```
