@@ -30,6 +30,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
 ### 2: [24 game](./Rosetta%20Code%20-%2024%20game)
+### 4: [ABC Problem](./Rosetta%20Code%20-%20ABC%20Problem)
 
 ## freeCodeCamp Project Euler
 ### 1: [Multiples of 3 and 5](./Project%20Euler%20-%20Multiples%20of%203%20and%205)
