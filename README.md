@@ -29,7 +29,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 9: [Perform an Intersection on Two Sets](./Data%20Structures%20-%20Perform%20an%20Intersection%20on%20Two%20Sets%20of%20Data)
 ### 10: [Perform a Difference on Two Sets](./Data%20Structures%20-%20Perform%20a%20Difference%20on%20Two%20Sets%20of%20Data)
 ### 11 [Perform a Subset Check on Two Sets](./Data%20Structures%20-%20Perform%20a%20Subset%20Check%20on%20Two%20Sets%20of%20Data)
-
+### 12 [Data Structures - Create and Add to Sets in ES6](./Data%20Structures%20-%20Create%20and%20Add%20to%20Sets%20in%20ES6)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
