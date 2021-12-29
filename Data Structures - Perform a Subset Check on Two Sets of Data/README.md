@@ -1,6 +1,6 @@
 # freeCodeCamp: Data Structures - Perform a Subset Check on Two Sets of Data
 
-Pass a set as an argument to an `isSubsetOf` method that tells you if all the elements in the primary set are in the submitted set (return `true`) or not (return `false`);
+Pass a set as an argument to an `isSubsetOf` method that tells you if all the elements in the primary set are in the submitted set (return `true`) or not (return `false`).
 
 ## Solution
 
