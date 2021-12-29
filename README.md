@@ -27,7 +27,8 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 7: [Create a Set Class](./Data%20Structures%20-%20Create%20a%20Set%20Class)
 ### 8: [Perform a Union on Two Sets](./Data%20Structures%20-%20Perform%20a%20Union%20on%20Two%20Sets)
 ### 9: [Perform an Intersection on Two Sets](./Data%20Structures%20-%20Perform%20an%20Intersection%20on%20Two%20Sets%20of%20Data)
-### 10: [Perform a Difference on Two Sets](Data%20Structures%20-%20Perform%20a%20Difference%20on%20Two%20Sets%20of%20Data)
+### 10: [Perform a Difference on Two Sets](./Data%20Structures%20-%20Perform%20a%20Difference%20on%20Two%20Sets%20of%20Data)
+### 11 [Perform a Subset Check on Two Sets](./Data%20Structures%20-%20Perform%20a%20Subset%20Check%20on%20Two%20Sets%20of%20Data)
 
 
 ## freeCodeCamp Rosetta Code
