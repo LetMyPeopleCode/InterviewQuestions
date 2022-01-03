@@ -4,7 +4,7 @@ Beginning the section to cover maps and hash tables. Maps are Key->Value pairs f
 
 In this exercise, we use a JavaScript object literal (`this.collection`) as our datastore for the items. The assignment tasks us with creating add, remove, get, has, values, size, and clear methods.
 
-## Solution Explained
+## Solution explained
 
 I started with a simple function to implement `add()`.
 
