@@ -34,6 +34,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 14 & 15: Skipped write-up because they were simple Set operations
 ### 16: [Create a Map Data Structure](./Data%20Structures%20-%20Create%20a%20Map%20Data%20Structure)
 ### 17: Skipped write-up, just 2 lines of code.
+### 18: [Create a Hash Table](./Data%20Structures%20-%20Create%20a%20Hash%20Table)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
