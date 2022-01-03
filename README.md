@@ -32,7 +32,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 12: [Data Structures - Create and Add to Sets in ES6](./Data%20Structures%20-%20Create%20and%20Add%20to%20Sets%20in%20ES6)
 ### 13: [Remove items from a set in ES6](Data%20Structures%20-%20Remove%20items%20from%20a%20set%20in%20ES6)
 ### 14 & 15: Skipped write-up because they were simple Set operations
-### 16: Create a Map Data Structure
+### 16: [Create a Map Data Structure](./Data%20Structures%20-%20Create%20a%20Map%20Data%20Structure)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
