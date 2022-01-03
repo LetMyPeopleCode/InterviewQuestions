@@ -23,7 +23,7 @@ This worked, but note that I was able to use `b.collection.<key>` to get the val
 
 The simplest way to do that is to remove `this.` from definining it and declare it with `let`. But then you have NO visibility into the object without a `get()` method. That's as easy as adding a line.
 
-```javascriptlet
+```javascript
 var Map = function() {
   let collection = {};
   this.add = (key, value) => {collection[key] = value};
