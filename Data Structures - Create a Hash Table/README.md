@@ -21,12 +21,11 @@ Then I thought back to a project from 15 years ago, where I was going to have to
 
 So, after writing the solution above, I realized the idea of speeding up searches with the use of arrays and subarrays... or objects and subobjects... was a reasonable hypothesis.
 
-The `add` function checks for a property of the `collection` object equal to the incoming hash. If there isn't one, it creates one and sets its value as a new empty object literal. Then it sets the key as a property name of the hash object and gives that property the requested value. I actually did check to see if a regular hashtable duplicated keys. It doesn't. So a repeat assignment to an existing key would overwrite the value.
+The `add` function checks for a property of the `collection` object equal to the incoming hash. If there isn't one, it creates one and sets its value as a new empty object literal. Then it sets the key as a property name of the hash object and gives that property the requested value. I checked to see if a regular hashtable duplicated keys. It doesn't. So a repeat assignment to an existing key would overwrite the value.
 
-The `remove` function was tricky, because it seems they're doing some inspection of the `collection` object. Emptying the object at the hash wasn't enough. If the hash object was empty, it needed to be removed as well. So it checks for an object with the hash value, quitting if that doesn't exist. Then it makes sure there's a value for that specific key, quitting if one doesn't exist. Then it deletes the key from the hash object. If the hash object is now empty, it deletes that too. It wasn't until I implemented the removal of the empty object that everything passed.
+The `remove` function was tricky, because it seems they're doing some inspection of the `collection` object. Emptying the object at the hash wasn't enough. If the hash object was empty, it needed to be removed as well to pass the tests. So it checks for an object with the hash value, quitting if that doesn't exist. Then it makes sure there's a value for that specific key, quitting if one doesn't exist. Then it deletes the key from the hash object. If the hash object is now empty, it deletes that too. It wasn't until I implemented the removal of the empty object that everything passed.
 
 The `lookup` function checks for the existence of a hash object with that ID, then a property with the key value. If both exist and the value isn't `undefined`, it returns the value.
-
 
 ## Solution
 ```javascript
