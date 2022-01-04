@@ -26,7 +26,7 @@ What didn't occur to me was that the `head` node was the storage and each node s
   };
 ```
 
-I'm creating the node (and the array if it doesn't exist), putting it in the array, then pulling it back out of the array to be the `next` value of the prior node if the node isn't the head element. The funny thing is that this would keep working even if I clobbered the array, because the `node` objects are passed by reference, not value. 
+I'm creating the node (and the array if it doesn't exist), putting it in the array, then pulling it back out of the array to be the `next` value of the prior node (if there is a prior node). The funny thing is that the list would remain intact even if I clobbered the array, because the `node` objects are passed by reference, not value. 
 
 What does that mean? Passing by reference means when I put a node into the `next` property, I'm not copying it out of the array, nor am I passing its location in the array, but I'm storing the node object's location in memory, so even if the order of the array changes or the array itself is clobbered, the node still exists in the `next` property of the parent object.
 
@@ -41,7 +41,7 @@ f = null;
 console.log(b)
 ```
 
-The object still exists because it still has a reference in memory (`b`) keeping the garbage collector from removing it. So in my solution, the array is absolutely pointless except as a cheat to reference the order of the nodes. It also means I'm creating a whole mess and adding complexity to future management of the list.
+The object still exists because it's still assigned to a variable (`b`) keeping the garbage collector from removing it. So in my solution, the array is absolutely pointless except as a cheat to reference the order of the nodes. It also means I'm creating a whole mess and adding complexity to future management of the list if I keep using it for that purpose.
 
 ## Solution explained
 
