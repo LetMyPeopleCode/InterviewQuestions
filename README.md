@@ -25,9 +25,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 
 That's when it hit me. Some of these archaic data structures are still around because they were created when resource constraints were much more severe. In modern systems with gigahertz clock speeds and gigabytes of RAM, running virtualized in containers, a couple of bytes here and there doesn't matter. But when you're limited to 32k of RAM and an 8 MHz processor (like when coding firmware), you need to code *very* efficiently.
 
-Also, a number of SDMs have told me (paraphrasing here) "it doesn't matter what language the programmer knows or how many different ones they can use to output 'Hello World!' We're more interested in the depth of their knowledge, because someone with a deep knowledge of programming can always be brought up to speed on whatever language we need them to use." 
-
-Or as I once told an interviewer who asked if I could build a project in a language I'd never used, "a variable is a variable and a loop is a loop. The rest is syntax. If I had two weeks and a book, I could do it." He hired me and gave me two weeks and a book. Not sure how much of that is down to me being a bearded, cis-het, white male who looks the programmer part, how much of that is coding skill, and how much of that is interviewing skill. So take all of my interview success stories with a grain of salt, because I'm not an accurate judge of how much of a part privilege played in my success.
+Also, a number of SDMs have told me (paraphrasing here) "it doesn't matter what language the programmer knows or how many different ones they can use to output 'Hello World!' We're more interested in the depth of their knowledge, because someone with a deep knowledge of programming can always be brought up to speed quickly on whatever language we need them to use."
 
 ### 3: [Create a Stack Class](./Data%20Structures%20-%20Create%20a%20Stack%20Class) 
 ### 4: [Create a Queue Class](./Data%20Structures%20-%20Create%20a%20Queue%20Class)
@@ -45,6 +43,7 @@ Or as I once told an interviewer who asked if I could build a project in a langu
 ### 17: Skipped write-up, just 2 lines of code.
 ### 18: [Create a Hash Table](./Data%20Structures%20-%20Create%20a%20Hash%20Table)
 ### 19: [Work with Nodes in a Linked List](./Data%20Structures%20-%20Work%20with%20Nodes%20in%20a%20Linked%20List)
+### 20: [Create a Linked List Class](./Data%20Structures%20-%20Create%20a%20Linked%20List%20Class)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
