@@ -35,6 +35,7 @@ First, it might help other people. Second, it helps me remember them a bit bette
 ### 16: [Create a Map Data Structure](./Data%20Structures%20-%20Create%20a%20Map%20Data%20Structure)
 ### 17: Skipped write-up, just 2 lines of code.
 ### 18: [Create a Hash Table](./Data%20Structures%20-%20Create%20a%20Hash%20Table)
+### 19: [Work with Nodes in a Linked List](./Data%20Structures%20-%20Work%20with%20Nodes%20in%20a%20Linked%20List)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
