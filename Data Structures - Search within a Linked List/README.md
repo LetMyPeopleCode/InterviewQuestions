@@ -1,4 +1,4 @@
-# Data Structures - Search within a Linked List
+# freeCodeCamp: Data Structures - Search within a Linked List
 
 In this exercise, the task is to add three methods to the `LinkedList` class to examine the contents.
  - `isEmpty()` - Does the list have any nodes? True if so, otherwise false.
