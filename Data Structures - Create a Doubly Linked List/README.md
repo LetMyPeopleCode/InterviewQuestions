@@ -24,7 +24,7 @@ First it checks if the `element` value matches the `data` value of the node.
 
 > You might have noticed in their prior singly link lists exercises, they used `element` for the node value property, but in this one they use `data`. That's a minor inconsistency, but one you'd want to avoid if you could. If you're using two different property names in two different objects to refer to the same thing, it can be confusing to whomever inherits your code. 
 
-If the value matches, it has three different methods for handling it:
+If the value matches, reduce `length` by one, then it has three different methods for handling the match:
  1. **It's the head node** (`list.prev === null`): Make the `head` node's `next` value the `head` node. While the tests don't remove the head node of a single-element list, I also check for that case, because you cannot add a property to `null` (it will cause an error). If it's not a single-item list, make the new `head` node's `prev` value `null`. If it is, make the list's `tail` value `null` instead.
 
  2. **It's the tail node** (`list.next === null`): This removes the node by making the previous node's `next` node `null` and assigns the previous node to `tail`. It doesn't need to worry about the prior node's `prev` value, because thanks to `else if`, it isn't the `head` node.
