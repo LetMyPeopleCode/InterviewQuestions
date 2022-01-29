@@ -26,7 +26,7 @@ this.addAt = function(index, el) {
   if(index === 0) {
     top.next = head;
     head = top;
-  } else if(index === length`){
+  } else if(index === length){
     let node = head;
     while(node.next !== null){
       node = node.next;
