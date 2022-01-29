@@ -48,6 +48,7 @@ Also, a number of SDMs have told me (paraphrasing here) "it doesn't matter what 
 ### 22: [Data Structures - Search within a Linked List](./Data%20Structures%20-%20Search%20within%20a%20Linked%20List)
 ### 23: [Data Structures - Remove Elements from a Linked List by Index](./Data%20Structures%20-%20Remove%20Elements%20from%20a%20Linked%20List%20by%20Index)
 ### 24: [Data Structures - Add Elements at a Specific Index in a Linked List](./Data%20Structures%20-%20Add%20Elements%20at%20a%20Specific%20Index%20in%20a%20Linked%20List)
+### 25: [Data Structures - Create a Doubly Linked List](./Data%20Structures%20-%20Create%20a%20Doubly%20Linked%20List)
 
 ## freeCodeCamp Rosetta Code
 ### 1: [100 doors](./Rosetta%20Code%20-%20100%20doors)
