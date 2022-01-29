@@ -14,7 +14,7 @@ At this point there are three possible operations:
  3. **Insert in the middle** (whatever's left): The past three tests (too big/small, end, beginning) have ruled out all other cases except after the first element and before the final. In this case, I walk the list to the specific index, keeping track of the node before it in a variable named `prenode`. The new node swaps in as `prenode`'s `next` and puts the node that was at that index in its `next`. 
 
 ## Solution
-```
+```javascript
 this.addAt = function(index, el) {
   // test for useless indices
   if(index < 0 || index > length || typeof index !== "number") return false;
