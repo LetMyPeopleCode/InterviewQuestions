@@ -10,9 +10,13 @@ First, I wanted a length counter for convenience, so I added it. Then the list o
 
 Then I wrote the `reverse` method. First, I checked my lovely convenience `length` counter to return null if there are no items.
 
-Then I created a new, empty doubly linked list. Then I created a tracking variable called `old` to let me walk the list... backward from the `tail` object. Then a `while` loop until there was nothing in `old` (eventually `old = old.prev` would turn `old`'s value to `null` and stop the loop).
+Then I created a new, empty doubly linked list inside the existing one. 
 
-The loop adds the values from the current list to `reversed`. The `add` method creates all the new `next`/`prev` values in the proper sequence and relationship. When the loop is done, swap `reversed`'s `head` and `tail` values for the current list's and boom.
+Then I created a tracking variable called `old` to let me walk the list... backward from the `tail` object. Then a `while` loop until there was nothing in `old` (eventually `old = old.prev` would turn `old`'s value to `null` and stop the loop).
+
+The loop adds the values from the current list to `reversed`. The `add` method creates all the new `next`/`prev` values in the proper sequence and relationship. When the loop is done, swap `reversed`'s `head` and `tail` values for the current list's and when the method finishes, `reversed`'s memory is released.
+
+If I wanted to make sure I didn't have to wait for the garbage collector, I could explicitly delete `reversed` and that might speed up freeing the memory.
 
 ## Solution
 ```javascript
